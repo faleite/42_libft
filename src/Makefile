@@ -1,3 +1,4 @@
+### Variables ###
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -5,10 +6,11 @@ FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_toupper.c ft_tolower.c
 OBJS = $(FILES:.c=.o) # generates the same FILES list whith the .o extension 
 
+### Script ###
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+	ar -rcs $@ $(OBJS)
 
 $(OBJS): $(FILES)
 	$(CC) $(CFLAGS) -c $(FILES)

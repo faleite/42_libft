@@ -104,11 +104,32 @@ all: programa1 programa2 biblioteca1
 ```
 - clean
   - Serve para remover conjunto ou determinados arquivos
+- fclean
+  - Espécie de force clean, que faz duas coisas: Chama a regra "clean"\
+  e em seguida apaga libft.a
 ```makefile
 clean:
-	rm *.o  #remove todos os arquivos com formato .o
-	rm *.c
+	rm *.o  # remove todos os arquivos com formato .o
+#	rm *.c
+
+fclean: clean # fclean depende do alvo "clean"
+	rm -f *.a # remove todos os arquivos com formato .a	
 ```
+- re
+  - A regra re (abreviação de "rebuild" ou "recompilar") no Makefile é usada\
+  para reconstruir o projeto inteiro, recompilando todos os arquivos de\
+  código-fonte, mesmo que eles não tenham sido modificados desde a última\
+  compilação.
+```makefile
+re: fclean all
+```
+- .PHONY
+  - Resolve problema de ambiguidadade, caso nome de uma regra seja o mesmo que\
+  um arquivo existente no projeto.
+```makefile
+.PHONY:	all clean fclean re
+```
+---
 ### Comandos
 Descrição | Comando |
 ----------|---------|
@@ -134,6 +155,7 @@ $@  | O alvo
 *.o | Qualquer .o no comando
 %.o | Qualquer .o no alvo ou dependência
 - Exemplos:
+
 ```makefile
 SRC = ./src
 OBJ = ./obj
