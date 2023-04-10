@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,vim,c,python,virtualenv,macos,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,vim,c,python,virtualenv,macos,linux
 
+### Tester ###
+Libftest/
+
 ### C ###
 # Prerequisites
 *.d
