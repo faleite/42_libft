@@ -22,6 +22,7 @@
 ###### strlen
 ###### strncmp
 ###### strchr
+###### strrchr
 ###### strnstr
 ---
 ##### Manipulation
@@ -66,7 +67,7 @@ ___
 ##### putstr_fd
 ##### putendl_fd
 ##### putnbr_fd
-##### strteri
+##### striteri
 ___
 
 ## **Bonus**
