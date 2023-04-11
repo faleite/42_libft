@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/11 21:23:25 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/11 23:25:34 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,22 @@ int	ft_toupper(int c);
  * otherwise, the argument is returned unchanged.  
 */
 int	ft_tolower(int c);
+
+/**
+ * @brief Computes the	length of the string s excluding the terminating null 
+ * byte ('\0').
+ * @param s Pointer of string.
+ * @return Returns the number of bytes in the string pointed to by s.  
+*/
+size_t	ft_strlen(const char *s);
+
+/**
+ * @brief compares only the first (at most) n bytes of s1 and s2. 
+ * @param s1 Pointer of string.
+ * @param s2 Pointer of string.
+ * @return returns an integer value that indicates the relationship between the
+ * strings.  
+*/
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif /* LIBFT_H */
