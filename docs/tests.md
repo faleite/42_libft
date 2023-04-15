@@ -52,3 +52,33 @@ int	main(void)
 	return (0);
 }
 ```
+## strnstr
+```c
+int	main(void)
+{
+	const char *largestring = "Foo Bar Baz";
+	const char *smallstring = "Bar";
+	char	*ptr;
+
+	ptr = ft_strnstr(largestring, smallstring, 7);
+
+	printf("%s", ptr);
+	return (0);
+}
+```
+## strlcpy
+```c
+size_t	ft_strlen(const char *s);
+
+int	main(void)
+{
+	char *dst;
+	const char *src;
+
+	//dst = "";
+	src = "Teste";
+
+	printf("%zu, %s", ft_strlcpy(dst, src, sizeof(src)), dst);
+	return (0);
+}
+```

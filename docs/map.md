@@ -19,14 +19,14 @@
 #### **String**
 
 ##### Examination
-###### strlen
-###### strncmp
-###### strchr
-###### strrchr
-###### strnstr
+###### ~~strlen~~
+###### ~~strncmp~~
+###### ~~strchr~~
+###### ~~strrchr~~
+###### ~~strnstr~~
 ---
 ##### Manipulation
-###### strlcpy
+###### ~~strlcpy~~
 ###### strlcat
 ###### strdup
 
