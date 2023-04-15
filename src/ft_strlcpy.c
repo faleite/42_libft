@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 19:24:30 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/15 20:39:11 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/15 21:08:57 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	if (!(size))
 		return (src_len);
 	i = 0;
-	if (size > 0)
+	while (src[i] && i < (size - 1))
 	{
-		while (src[i] && i < (size - 1))
-		{
-			dst[i] = src[i];
-			i++;
-		}
+		dst[i] = src[i];
+		i++;
 	}
 	dst[i] = '\0';
 	return (src_len);
