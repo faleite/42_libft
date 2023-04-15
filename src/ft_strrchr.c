@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/11 22:18:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/12 20:54:14 by faaraujo         ###   ########.fr       */
+/*   Created: 2023/04/15 10:21:29 by faaraujo          #+#    #+#             */
+/*   Updated: 2023/04/15 17:37:28 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t			i;
-	unsigned char	*cs1;
-	unsigned char	*cs2;
+	const char	*s_last;
 
-	cs1 = (unsigned char *)s1;
-	cs2 = (unsigned char *)s2;
-	i = 0;
-	while ((cs1[i] || cs2[i]) && i < n)
+	s_last = s;
+	if (c > 127)
+		c %= 256;
+	while (*s_last)
+		s_last++;
+	while (s_last != s)
 	{
-		if (cs1[i] != cs2[i])
-			return (cs1[i] - cs2[i]);
-		i++;
+		if (*s_last == c)
+			return ((char *)s_last);
+		s_last--;
 	}
-	return (0);
+	if (*s_last == c)
+		return ((char *)s_last);
+	return (NULL);
 }
