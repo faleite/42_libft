@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/15 19:24:26 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/16 16:24:48 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,13 @@ int		ft_tolower(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /**
+ * @brief The atoi() function converts the initial portion of the string pointed
+ * to by nptr to int representation.
+ * @return The converted value.
+*/
+int     ft_atoi(const char *ptr);
+
+/**
  * @brief function locates the first occurrence	of c (converted	to a char) in
  * the string pointed to by s. The terminating null character is considered part
  * of the string; therefore if c is `\0', the functions locate the terminating 
@@ -120,6 +127,18 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 /**
+ * @brief The strdup() function returns a pointer to a new string which is a
+ * duplicate of the string s. Memory for the new string is obtained with
+ * malloc(3), and can be freed with free(3).
+ * @return On success, the strdup() function returns a pointer to the duplicated
+ * string. It returns NULL if insufficient memory was available, with errno set 
+ * to indicate the cause of the error.
+ * @attention ERRORS --> ENOMEM Insufficient memory available to allocate 
+ * duplicate string.
+*/
+char	*ft_strdup(const char *s);
+
+/**
  * @brief Computes the	length of the string s excluding the terminating null 
  * byte ('\0').
  * @param s Pointer of string.
@@ -137,5 +156,18 @@ size_t	ft_strlen(const char *s);
  * length of src.
 */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+
+/**
+ * @brief Function copy and concatenate strings respectively. strlcat() take the
+ * full size of the buffer (not just the length) and guarantee to NUL-terminate
+ * the result (as long as there is at least one byte free in dst).
+ * ---> for strlcat() both src and dst must be NUL-terminated.
+ * --->  The strlcat() function appends the NUL-terminated string src to the end
+ * of dst. It will append at most size - strlen(dst) - 1 bytes, NUL-terminating
+ * the result.
+ * @return the total length of the string they tried to create. that means the
+ * initial length of dst plus the length of src.
+*/
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif /* LIBFT_H */

@@ -27,8 +27,8 @@
 ---
 ##### Manipulation
 ###### ~~strlcpy~~
-###### strlcat
-###### strdup
+###### ~~strlcat~~
+###### ~~strdup~~
 
 #### **Conversion (numeric format)**
 ##### atoi

@@ -82,3 +82,33 @@ int	main(void)
 	return (0);
 }
 ```
+## strlcat
+```c
+size_t	ft_strlen(const char *s);
+
+int	main(void)
+{
+	const char	*src;
+	char	dst[1] = "-";
+
+	src = "Bar";
+
+	printf("Size: %zu, Dest: %s", ft_strlcat(dst, src, 16), dst);
+	return (0);
+}
+```
+## strdup
+```c
+size_t	ft_strlen(const char *s);
+
+int	main(void)
+{
+	char	*s1;
+	char	*s2;
+
+	s1 = "star";
+	s2 = ft_strdup(s1);
+	printf("%s", s2);
+	return (0);
+}
+```
