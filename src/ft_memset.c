@@ -1,39 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/16 16:19:23 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/17 22:00:20 by faaraujo         ###   ########.fr       */
+/*   Created: 2023/04/17 22:51:13 by faaraujo          #+#    #+#             */
+/*   Updated: 2023/04/17 23:26:40 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *ptr)
+void	*ft_memset(void *dst, int c, size_t len)
 {
-	int	i;
-	int	pn;
-	int	nbr;
+	unsigned char	*ptr;
 
-	i = 0;
-	pn = 1;
-	nbr = 0;
-	while ((ptr[i] >= 9 && ptr[i] <= 13) || ptr[i] == 32)
-		i++;
-	if (ptr[i] == '-' || ptr[i] == '+')
-	{
-		if (ptr[i] == '-')
-			pn = -1;
-		i++;
-	}
-	while (ptr[i] && ft_isdigit(ptr[i]))
-	{
-		nbr *= 10;
-		nbr += ptr[i] - 48;
-		i++;
-	}
-	return (nbr * pn);
+	ptr = (unsigned char *)dst;
+	while (len--)
+		*ptr++ = c;
+	return (dst);
 }

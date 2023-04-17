@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/16 16:24:48 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/17 23:04:41 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
  * to by nptr to int representation.
  * @return The converted value.
 */
-int     ft_atoi(const char *ptr);
+int		ft_atoi(const char *ptr);
 
 /**
  * @brief function locates the first occurrence	of c (converted	to a char) in
@@ -137,6 +137,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
  * duplicate string.
 */
 char	*ft_strdup(const char *s);
+
+/**
+ * @brief Function fills the length of bytes (len) of the memory area pointed to
+ * by dst with the constant byte c.
+ * @param dst a pointer to the memory block to be filled.
+ * @param c the value to be filled into the memory block. This value is
+ * converted to an unsigned integer before being copied into memory.
+ * @param len the number of bytes to pad.
+ * @return a pointer to the memory area dst.
+*/
+void	*ft_memset(void *dst, int c, size_t len);
 
 /**
  * @brief Computes the	length of the string s excluding the terminating null 

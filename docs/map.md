@@ -31,12 +31,12 @@
 ###### ~~strdup~~
 
 #### **Conversion (numeric format)**
-##### atoi
+##### ~~atoi~~
 
 #### **Memory**
 
 ##### Manipulation
-###### memset
+###### ~~memset~~
 ###### bzero
 ###### memcpy
 ###### memccpy

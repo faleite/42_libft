@@ -112,3 +112,35 @@ int	main(void)
 	return (0);
 }
 ```
+## atoi
+```c
+int	ft_isdigit(int c);
+int	ft_isalpha(int c);
+
+int     main(void)
+{
+	//const char *str = "   01234564890ahe522";
+	//const char *str = "  a-1234";
+	int	num;
+
+	num = ft_atoi(str);
+	printf("%d", num);
+        return (0);
+}
+```
+## memset
+```c
+int main()
+{
+    int arr[10];
+
+    ft_memset(arr, 0, sizeof(arr));
+
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
