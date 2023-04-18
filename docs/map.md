@@ -28,7 +28,6 @@
 ##### Manipulation
 ###### ~~strlcpy~~
 ###### ~~strlcat~~
-###### ~~strdup~~
 
 #### **Conversion (numeric format)**
 ##### ~~atoi~~
@@ -37,8 +36,8 @@
 
 ##### Manipulation
 ###### ~~memset~~
-###### bzero
-###### memcpy
+###### ~~bzero~~
+###### ~~memcpy~~
 ###### memccpy
 ###### memmove
 ---
@@ -47,6 +46,7 @@
 ###### memcmp
 ---
 ##### Dynamic management
+###### ~~strdup~~
 ###### calloc
 ___
 

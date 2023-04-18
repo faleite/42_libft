@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/17 23:04:41 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/18 22:31:15 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,7 +150,22 @@ char	*ft_strdup(const char *s);
 void	*ft_memset(void *dst, int c, size_t len);
 
 /**
- * @brief Computes the	length of the string s excluding the terminating null 
+ * @brief function writes len zero bytes to the string s.
+ * If len is zero, bzero() does	nothing.
+ * @param s a pointer to the memory to be filled
+ * @param len the size of the block of memory to be filled.
+*/
+void	ft_bzero(void *s, size_t len);
+
+/**
+ * @brief The memcpy() function copies len bytes from string src to string dst.
+ * If src and dst overlap, the results are not defined.
+ * @return The memcpy() function returns the original value of dst.
+*/
+void	*ft_memcpy(void *dst, const void *src, size_t len);
+
+/**
+ * @brief Computes the length of the string s excluding the terminating null 
  * byte ('\0').
  * @param s Pointer of string.
  * @return Returns the number of bytes in the string pointed to by s.  
