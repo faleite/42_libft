@@ -38,8 +38,7 @@
 ###### ~~memset~~
 ###### ~~bzero~~
 ###### ~~memcpy~~
-###### memccpy
-###### memmove
+###### ~~memmove~~
 ---
 ##### Examination
 ###### memchr

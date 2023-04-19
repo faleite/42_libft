@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/18 22:31:15 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/19 21:48:54 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,6 +163,16 @@ void	ft_bzero(void *s, size_t len);
  * @return The memcpy() function returns the original value of dst.
 */
 void	*ft_memcpy(void *dst, const void *src, size_t len);
+
+/**
+ * @brief The  memmove()  function  copies  n  bytes from memory area src to
+ * memory area dest.  The memory areas may overlap: copying takes place as
+ * though the bytes in src are first copied into a temporary array that does not
+ * overlap src or dest, and the bytes are then copied from the temporary array
+ * to dest.
+ * @return a pointer to dest.
+*/
+void	*ft_memmove(void *dst, const void *src, size_t len);
 
 /**
  * @brief Computes the length of the string s excluding the terminating null 
