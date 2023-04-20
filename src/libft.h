@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/19 21:48:54 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/20 22:57:03 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,16 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *ptr);
 
 /**
+ * @brief function compares the first n bytes (each interpreted as unsigned
+ * char) of the memory areas s1 and s2.
+ * @return function returns zero if the two strings are identical, otherwise
+ * returns the difference between the first two differing bytes (treated as
+ * unsigned char values, so that `\200' is greater than `\0', for example).
+ * Zero-length strings are always identical.
+*/
+int		ft_memcmp(const void *s1, const void *s2, size_t len);
+
+/**
  * @brief function locates the first occurrence	of c (converted	to a char) in
  * the string pointed to by s. The terminating null character is considered part
  * of the string; therefore if c is `\0', the functions locate the terminating 
@@ -173,6 +183,28 @@ void	*ft_memcpy(void *dst, const void *src, size_t len);
  * @return a pointer to dest.
 */
 void	*ft_memmove(void *dst, const void *src, size_t len);
+
+/**
+ * @brief function locates the first occurrence	of c (converted	to an unsigned
+ * char) in string s.
+ * @return a pointer to the byte located, or NULL if no such byte exists within
+ * len bytes.
+*/
+void	*ft_memchr(const void *s, int c, size_t len);
+
+/**
+ * @brief The calloc() function allocates memory for an array of nmemb elements
+ * of size bytes each and returns a pointer to the allocated memory.  The memory
+ * is set to zero.  If nmemb or size is 0, then calloc() returns either NULL, or
+ * a unique pointer value that can later be successfully passed to free().
+ * If the multiplication of nmemb and size would result in integer overflow,
+ * then calloc() returns an error.  By contrast, an integer overflow would not
+ * be detected in the following call to malloc(), with the result that an
+ * incorrectly sized block of memory would be allocated: malloc(nmemb * size);
+ * @return return  a pointer to the allocated memory, which is suitably aligned for any
+       built-in type.  On error, these functions return NULL.
+*/
+void	*ft_calloc(size_t nbr, size_t size);
 
 /**
  * @brief Computes the length of the string s excluding the terminating null 

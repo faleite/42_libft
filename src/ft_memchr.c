@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/11 22:18:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/20 21:01:43 by faaraujo         ###   ########.fr       */
+/*   Created: 2023/04/20 20:05:55 by faaraujo          #+#    #+#             */
+/*   Updated: 2023/04/20 20:37:49 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	*ft_memchr(const void *s, int c, size_t len)
 {
-	size_t			i;
-	unsigned char	*cs1;
-	unsigned char	*cs2;
+	unsigned char	*s_cpy;
+	unsigned char	c_cpy;
 
-	cs1 = (unsigned char *)s1;
-	cs2 = (unsigned char *)s2;
-	i = 0;
-	while ((cs1[i] || cs2[i]) && i < n)
+	s_cpy = (unsigned char *)s;
+	c_cpy = (unsigned char)c;
+	while (len--)
 	{
-		if (cs1[i] != cs2[i])
-			return (cs1[i] - cs2[i]);
-		i++;
+		if (*s_cpy == c_cpy)
+			return (s_cpy);
+		s_cpy++;
 	}
-	return (0);
+	return (NULL);
 }

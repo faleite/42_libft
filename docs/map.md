@@ -41,8 +41,8 @@
 ###### ~~memmove~~
 ---
 ##### Examination
-###### memchr
-###### memcmp
+###### ~~memchr~~
+###### ~~memcmp~~
 ---
 ##### Dynamic management
 ###### ~~strdup~~
