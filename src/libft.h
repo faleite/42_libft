@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/21 21:23:48 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/22 16:03:51 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,6 +149,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
 
 /**
+ * @brief Applies the function ’f’ to each character of the string ’s’, and
+ * passing its index as first argument to create a new string (with malloc(3))
+ * resulting from successive applications of ’f’.
+ * @param s The string on which to iterate.
+ * @param f The function to apply to each character.
+ * @return The string created from the successive applications of ’f’. Returns
+ * NULL if the allocation fails.
+*/
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+/**
  * @brief Function fills the length of bytes (len) of the memory area pointed to
  * by dst with the constant byte c.
  * @param dst a pointer to the memory block to be filled.
@@ -213,7 +224,6 @@ void	*ft_calloc(size_t nthings, size_t size);
  * @brief Outputs the character ’c’ to the given file descriptor.
  * @param c The character to output.
  * @param fd The file descriptor on which to write.
- * @return None
 */
 void	ft_putchar_fd(char c, int fd);
 
@@ -221,9 +231,32 @@ void	ft_putchar_fd(char c, int fd);
  * @brief Outputs the string ’s’ to the given file descriptor.
  * @param s The string to output.
  * @param fd The file descriptor on which to write.
- * @return None
 */
 void	ft_putstr_fd(char *s, int fd);
+
+/**
+ * @brief Outputs the string ’s’ to the given file descriptor followed by a
+ * newline.
+ * @param s The string to output.
+ * @param fd The file descriptor on wich to write.
+*/
+void	ft_putendl_fd(char *s, int fd);
+
+/**
+ * @brief Outputs the integer ’n’ to the given file descriptor.
+ * @param n The integer to output.
+ * @param fd The file descriptor on which to write.
+*/
+void	ft_putnbr_fd(int n, int fd);
+
+/**
+ * @brief Applies the function ’f’ on each character of the string passed as
+ * argument, passing its index as first argument. Each character is passed by 
+ * address to ’f’ to be modified if necessary.
+ * @param s The string on which to iterate.
+ * @param f The function to apply to each character.
+*/
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 /**
  * @brief Computes the length of the string s excluding the terminating null 
