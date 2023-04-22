@@ -46,7 +46,7 @@
 ---
 ##### Dynamic management
 ###### ~~strdup~~
-###### calloc
+###### ~~calloc~~
 ___
 
 ### **Additional**
@@ -61,12 +61,12 @@ ___
 ##### strtrim
 ---
 ####
-##### strmapi
-##### putchar_fd
-##### putstr_fd
-##### putendl_fd
-##### putnbr_fd
-##### striteri
+##### ~~strmapi~~
+##### ~~putchar_fd~~
+##### ~~putstr_fd~~
+##### ~~putendl_fd~~
+##### ~~putnbr_fd~~
+##### ~~striteri~~
 ___
 
 ## **Bonus**
