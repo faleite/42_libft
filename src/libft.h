@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/22 16:03:51 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/22 20:04:02 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,6 +158,14 @@ char	*ft_strdup(const char *s);
  * NULL if the allocation fails.
 */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+/**
+ * @brief Allocates (with malloc(3)) and returns a string representing the
+ * integer received as an argument. Negative numbers must be handled
+ * @param n the integer to convert.
+ * @return The string representing the integer. NULL if the allocation fails.
+*/
+char	*ft_itoa(int n);
 
 /**
  * @brief Function fills the length of bytes (len) of the memory area pointed to
