@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/22 20:04:02 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/23 17:34:21 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,6 +166,35 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
  * @return The string representing the integer. NULL if the allocation fails.
 */
 char	*ft_itoa(int n);
+
+/**
+ * @brief Allocates (with malloc(3)) and returns a substring from the string ’s’
+ * The substring begins at index ’start’ and is of maximum size ’len’.
+ * @param s The string from which to create the substring.
+ * @param start The start index of the substring in the string ’s’.
+ * @param len The maximum length of the substring.
+ * @return The substring. NULL if the allocation fails.
+*/
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+/** 
+ * @brief Allocates (with malloc(3)) and returns a new string, which is the
+ * result of the concatenation of ’s1’ and ’s2’.
+ * @param s1 The prefix string.
+ * @param s2 The suffix string.
+ * @return The new string. NULL if the allocation fails.
+*/
+char	*ft_strjoin(char const *s1, char const *s2);
+
+/**
+ * @brief Allocates (with malloc(3)) and returns a copy of ’s1’ with the
+ * characters specified in ’set’ removed from the beginning and the end of the
+ * string.
+ * @param s1 The string to be trimmed.
+ * @param set The reference set of characters to trim.
+ * @return The trimmed string. NULL if the allocation fails.
+*/
+char	*ft_strtrim(char const *s1, char const *set);
 
 /**
  * @brief Function fills the length of bytes (len) of the memory area pointed to

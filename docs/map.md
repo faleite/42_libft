@@ -55,10 +55,10 @@ ___
 ##### ~~itoa~~
 ---
 #### **Manipulation**
+##### ~~substr~~
+##### ~~strjoin~~
+##### ~~strtrim~~
 ##### split
-##### strjoin
-##### substr
-##### strtrim
 ---
 ####
 ##### ~~strmapi~~
