@@ -52,7 +52,7 @@ ___
 ### **Additional**
 
 #### **Conversion**
-##### itoa
+##### ~~itoa~~
 ---
 #### **Manipulation**
 ##### split
