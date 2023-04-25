@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 20:46:06 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/25 18:23:42 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/25 18:32:54 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,11 +73,9 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	size_t	len;
 
-	if (!s)
-		return (NULL);
 	arrlen = count_wrds(s, c);
 	arr = (char **)malloc(sizeof(char *) * (arrlen + 1));
-	if (!(arr))
+	if (!(arr) || !(s))
 	{
 		free(arr);
 		return (NULL);
@@ -96,7 +94,7 @@ char	**ft_split(char const *s, char c)
 		len = 0;
 		j++;
 	}
-	arr[j] = 0;
+	arr[j] = NULL;
 	return (arr);
 }
 
