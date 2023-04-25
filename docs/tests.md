@@ -144,3 +144,12 @@ int main()
     return 0;
 }
 ```
+## strtrim
+```c
+int main()
+{
+	printf("%s\n",ft_strtrim("abqbc","abc"));
+	printf("%s\n",ft_strtrim("xavocadoyz","xyz"));
+
+}                
+```

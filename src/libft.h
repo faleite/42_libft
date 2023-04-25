@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/23 17:34:21 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/25 15:34:41 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -195,6 +195,17 @@ char	*ft_strjoin(char const *s1, char const *s2);
  * @return The trimmed string. NULL if the allocation fails.
 */
 char	*ft_strtrim(char const *s1, char const *set);
+
+/**
+ * @brief Allocates (with malloc(3)) and returns an array of strings obtained by
+ * splitting ’s’ using the character ’c’ as a delimiter. The array must end with
+ * a NULL pointer.
+ * @param s The string to be split.
+ * @param c The delimiter character.
+ * @return The array of new strings resulting from the split. NULL if the
+ * allocation fails.
+*/
+char	**ft_split(char const *s, char c);
 
 /**
  * @brief Function fills the length of bytes (len) of the memory area pointed to

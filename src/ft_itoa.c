@@ -6,13 +6,13 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 20:06:56 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/23 14:32:16 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/25 15:30:04 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_numlen(int n)
+static int	ft_numlen(int n)
 {
 	size_t	len;
 
