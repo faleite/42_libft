@@ -153,3 +153,18 @@ int main()
 
 }                
 ```
+## split
+```c
+int	main(void)
+{
+	char *str = "   lorem   ipsum dolor  consectetur.   Suspendisse  ";
+	int	n = count_wrds(str, ' ');
+
+	printf("Amount of words: %d\n", n); 
+	char **split_str = ft_split(str, ' ');
+
+	while (*split_str)
+		printf("%s\n", *split_str++);
+	return (0);
+}
+```

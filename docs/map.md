@@ -58,7 +58,7 @@ ___
 ##### ~~substr~~
 ##### ~~strjoin~~
 ##### ~~strtrim~~
-##### split
+##### ~~split~~
 ---
 ####
 ##### ~~strmapi~~
