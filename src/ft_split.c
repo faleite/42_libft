@@ -6,12 +6,18 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 20:46:06 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/27 22:36:09 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/28 19:31:42 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Count how many substrings (words) are in a string
+ * @param s String to be counted
+ * @param c Separator of substrings
+ * @return Amount of substrings
+*/
 static int	count_wrds(char const *s, char c)
 {
 	size_t	i;
@@ -31,6 +37,15 @@ static int	count_wrds(char const *s, char c)
 	return (n_wrds);
 }
 
+/**
+ * @brief Copy substrings (words) of the a string, before copy, is created 
+ * memory for each word.
+ * @param s String to be copy
+ * @param start Start of substring
+ * @param end End of substring
+ * @param len Length of substring
+ * @return Copy of substring
+*/
 static char	*cpy_word(const char *s, int start, int end, int len)
 {
 	char	*word;

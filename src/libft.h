@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/27 23:30:02 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/28 21:20:12 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,22 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+/**
+ * @brief Allocates (with malloc(3)) and returns a new node. The member variable
+ * ’content’ is initialized with the value of the parameter ’content’.
+ * The variable ’next’ is initialized to NULL.
+ * @param content The content to create the node with.
+ * @return The new node.
+*/
+t_list	*ft_lstnew(void *content);
+
+/**
+ * @brief Adds the node ’new’ at the beginning of the list.
+ * @param lst The address of a pointer to the first link of a list.
+ * @param new The address of a pointer to the node to be added to the list.
+*/
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 /**
  * @brief Checks if "int c" is a letter

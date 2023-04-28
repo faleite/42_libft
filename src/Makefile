@@ -10,8 +10,10 @@ FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_striteri.c \
 		ft_strmapi.c ft_itoa.c ft_substr.c ft_strjoin.c ft_strtrim.c \
 		ft_split.c
-
 OBJS = $(FILES:.c=.o) # generates the same FILES list whith the .o extension 
+
+BNUS_FLES = ft_lstnew.c ft_lstadd_front.c
+OBJS_BNUS = $(BNUS_FLES:.c=.o)
 
 ### Script ###
 all: $(NAME)
@@ -22,11 +24,17 @@ $(NAME): $(OBJS)
 $(OBJS): $(FILES)
 	$(CC) $(CFLAGS) -c $(FILES)
 
+bonus:	$(OBJS_BNUS)
+	ar -rcs $(NAME) $(OBJS_BNUS)
+
+$(OBJS_BNUS): $(BNUS_FLES)
+	$(CC) $(CFLAGS) -c $(BNUS_FLES)
+
 clean:
 	rm -f *.o
 
 fclean: clean
-	rm -f *.a
+	rm -f $(NAME)
 
 re: fclean all
 
