@@ -1,6 +1,7 @@
 # Tests
 
-## isalpha
+## Mandatory
+### isalpha
 ```c
 int     main(void)
 {
@@ -9,7 +10,7 @@ int     main(void)
         return (0);
 }
 ```
-## isdigit
+### isdigit
 ```c
 int     main(void)
 {
@@ -20,7 +21,7 @@ int     main(void)
         return (0);
 }
 ```
-## isalnum
+### isalnum
 ```c
 int     main(void)
 {
@@ -31,7 +32,7 @@ int     main(void)
         return (0);
 }
 ```
-## isascii
+### isascii
 ```c
 int     main(void)
 {
@@ -42,7 +43,7 @@ int     main(void)
         return (0);
 }
 ```
-## toupper/tolower
+### toupper/tolower
 ```c
 int	main(void)
 {
@@ -52,7 +53,7 @@ int	main(void)
 	return (0);
 }
 ```
-## strnstr
+### strnstr
 ```c
 int	main(void)
 {
@@ -66,7 +67,7 @@ int	main(void)
 	return (0);
 }
 ```
-## strlcpy
+### strlcpy
 ```c
 size_t	ft_strlen(const char *s);
 
@@ -82,7 +83,7 @@ int	main(void)
 	return (0);
 }
 ```
-## strlcat
+### strlcat
 ```c
 size_t	ft_strlen(const char *s);
 
@@ -97,7 +98,7 @@ int	main(void)
 	return (0);
 }
 ```
-## strdup
+### strdup
 ```c
 size_t	ft_strlen(const char *s);
 
@@ -112,7 +113,7 @@ int	main(void)
 	return (0);
 }
 ```
-## atoi
+### atoi
 ```c
 int	ft_isdigit(int c);
 int	ft_isalpha(int c);
@@ -128,7 +129,7 @@ int     main(void)
         return (0);
 }
 ```
-## memset
+### memset
 ```c
 int main()
 {
@@ -144,7 +145,7 @@ int main()
     return 0;
 }
 ```
-## strtrim
+### strtrim
 ```c
 int main()
 {
@@ -153,7 +154,7 @@ int main()
 
 }                
 ```
-## split
+### split
 ```c
 int	main(void)
 {
@@ -166,5 +167,24 @@ int	main(void)
 	while (*split_str)
 		printf("%s\n", *split_str++);
 	return (0);
+}
+```
+
+## Bonus
+
+### lstdelone
+```c
+void	free_content(void *content)
+{
+    free(content);
+}
+
+int main(void)
+{
+    t_list *lst = ft_lstnew(malloc(10));
+    printf("lst before del: %p\n", lst);
+    ft_lstdelone(lst, &free_content);
+    printf("lst after del: %p\n", lst);
+    return 0;
 }
 ```

@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 21:23:24 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/28 21:20:12 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/29 22:46:04 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,16 @@
 # include <stdio.h>
 # include <limits.h>
 
+/******************************************************************************/
+/* 				   BONUS				      */
+/******************************************************************************/
+
+/**
+ * @brief define a linked list node, defining the struct in a recursive manner.
+ * @param t_list name of node.
+ * @param content variable, which will hold the integer value inside it.
+ * @param next which is a pointer that’ll point to the next node in a l. list
+*/
 typedef struct s_list
 {
 	void			*content;
@@ -36,11 +46,45 @@ typedef struct s_list
 t_list	*ft_lstnew(void *content);
 
 /**
+ * @brief Returns the last node of the list.
+ * @param lst The beginning of the list.
+ * @return Last node of the list.
+*/
+t_list	*ft_lstlast(t_list *lst);
+
+/**
  * @brief Adds the node ’new’ at the beginning of the list.
  * @param lst The address of a pointer to the first link of a list.
  * @param new The address of a pointer to the node to be added to the list.
 */
 void	ft_lstadd_front(t_list **lst, t_list *new);
+
+/**
+ * @brief Adds the node ’new’ at the end of the list.
+ * @param lst The address of a pointer to the first link of a list.
+ * @param new The address of a pointer to the node to be added to the list.
+*/
+void	ft_lstadd_back(t_list **lst, t_list *new);
+
+/**
+ * @brief Takes as a parameter a node and frees the memory of the node’s content
+ * using the function ’del’ given as a parameter and free the node. The memory
+ * of ’next’ must not be freed.
+ * @param lst The node to free.
+ * @param del The address of the function used to delete the content.
+*/
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
+
+/**
+ * @brief Counts the number of nodes in a list.
+ * @param lst The beginning of the list.
+ * @return The length of the list.
+*/
+int		ft_lstsize(t_list *lst);
+
+/******************************************************************************/
+/* 				MANDATORY				      */
+/******************************************************************************/
 
 /**
  * @brief Checks if "int c" is a letter
