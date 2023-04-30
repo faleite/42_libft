@@ -6,67 +6,67 @@
 #### **Char**
 
 ##### Classification
-###### ~~isalpha~~
-###### ~~isdigit~~
-###### ~~isalnum~~
-###### ~~isascii~~
-###### ~~isprint~~
+###### isalpha
+###### isdigit
+###### isalnum
+###### isascii
+###### isprint
 ---
 ##### Manipulation
-###### ~~toupper~~
-###### ~~tolower~~
+###### toupper
+###### tolower
 
 #### **String**
 
 ##### Examination
-###### ~~strlen~~
-###### ~~strncmp~~
-###### ~~strchr~~
-###### ~~strrchr~~
-###### ~~strnstr~~
+###### strlen
+###### strncmp
+###### strchr
+###### strrchr
+###### strnstr
 ---
 ##### Manipulation
-###### ~~strlcpy~~
-###### ~~strlcat~~
+###### strlcpy
+###### strlcat
 
 #### **Conversion (numeric format)**
-##### ~~atoi~~
+##### atoi
 
 #### **Memory**
 
 ##### Manipulation
-###### ~~memset~~
-###### ~~bzero~~
-###### ~~memcpy~~
-###### ~~memmove~~
+###### memset
+###### bzero
+###### memcpy
+###### memmove
 ---
 ##### Examination
-###### ~~memchr~~
-###### ~~memcmp~~
+###### memchr
+###### memcmp
 ---
 ##### Dynamic management
-###### ~~strdup~~
-###### ~~calloc~~
+###### strdup
+###### calloc
 ___
 
 ### **Additional**
 
+####
+##### strmapi
+##### putchar_fd
+##### putstr_fd
+##### putendl_fd
+##### putnbr_fd
+##### striteri
 #### **Conversion**
-##### ~~itoa~~
+##### itoa
 ---
 #### **Manipulation**
-##### ~~substr~~
-##### ~~strjoin~~
-##### ~~strtrim~~
-##### ~~split~~
+##### substr
+##### strjoin
+##### strtrim
+##### split
 ---
-####
-##### ~~strmapi~~
-##### ~~putchar_fd~~
-##### ~~putstr_fd~~
-##### ~~putendl_fd~~
-##### ~~putnbr_fd~~
-##### ~~striteri~~
 ___
 
 ## **Bonus**
