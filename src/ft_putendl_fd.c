@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 11:58:08 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/22 12:51:05 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/30 16:48:26 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@ void	ft_putendl_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i])
-		write(fd, &s[i++], 1);
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 	write(fd, "\n", 1);
 }

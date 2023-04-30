@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 21:25:43 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/22 12:36:48 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/04/30 16:51:32 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,8 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i])
-		write(fd, &s[i++], 1);
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }
