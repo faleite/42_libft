@@ -1,4 +1,4 @@
-# **libft.a**
+# **libft**
 
 ## **Mandatory**
 ### **libc**
@@ -6,15 +6,15 @@
 #### **Char**
 
 ##### Classification
-###### isalpha
-###### isdigit
-###### isalnum
-###### isascii
-###### isprint
+###### [isalpha](https://github.com/faleite/42libft/blob/main/src/ft_isalpha.c)
+###### [isdigit](https://github.com/faleite/42libft/blob/main/src/ft_isdigit.c)
+###### [isalnum](https://github.com/faleite/42libft/blob/main/src/ft_isalnum.c)
+###### [isascii](https://github.com/faleite/42libft/blob/main/src/ft_isascii.c)
+###### [isprint](https://github.com/faleite/42libft/blob/main/src/ft_isprint.c)
 ---
 ##### Manipulation
-###### toupper
-###### tolower
+###### [toupper](https://github.com/faleite/42libft/blob/main/src/ft_toupper.c)
+###### [tolower](https://github.com/faleite/42libft/blob/main/src/ft_tolower.c)
 
 #### **String**
 
@@ -66,7 +66,6 @@ ___
 ##### strjoin
 ##### strtrim
 ##### split
----
 ___
 
 ## **Bonus**
@@ -79,3 +78,9 @@ ___
 ### lstclear
 ### lstiter
 ### lstmap
+___
+
+## Run
+### libft.h
+### Makefile
+
