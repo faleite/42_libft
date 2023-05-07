@@ -10,9 +10,9 @@ done from the ground up, and must behave the same as the originals**
 * **Second part:** code a set of *functions that are either not included in the libc*, or included in a different form.
 * **Bonus part:** code functions to manipulate **Linked Lists**.
 
-Project | Keywords | Skills | Grade | 
-:------:|:--------:|:------:|:-----:|
-LIBFT | Unix logic | [Imperative programming] [Algorithms & AI] [Rigor] | [![faaraujo's 42 Libft Score](https://badge42.vercel.app/api/v2/clgrr2va0002108jo3cc5foww/project/3061823)](https://github.com/JaeSeoKim/badge42)
+Project | Skills | Grade | 
+:------:|:------:|:-----:|
+LIBFT | [Imperative programming] [Algorithms & AI] [Rigor] | [![faaraujo's 42 Libft Score](https://badge42.vercel.app/api/v2/clgrr2va0002108jo3cc5foww/project/3061823)](https://github.com/JaeSeoKim/badge42)
 
 ### *Access to the [interactive map](https://faleite.github.io/libft).*
 [<img align="center" src="./docs/map.png" width="100%"/>](https://faleite.github.io/libft)
