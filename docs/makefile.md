@@ -51,8 +51,7 @@ fclean: clean # fclean depende do alvo "clean"
 re: fclean all
 ```
 - .PHONY
-  - Resolve problema de ambiguidadade, caso nome de uma regra seja o mesmo que\
-  um arquivo existente no projeto.
+  - Ao definir esses phony targets no Makefile, o make sabe que esses targets não correspondem a arquivos reais e, portanto, não precisa procurar por eles ou comparar datas de modificação. Em vez disso, o make simplesmente executa as regras especificadas em cada target, de acordo com as dependências definidas.
 ```makefile
 .PHONY:	all clean fclean re
 ```
