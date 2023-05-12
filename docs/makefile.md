@@ -68,11 +68,21 @@ Descrição | Comando |
 *direciona a saída do programa para o arquivo* | **-o \<nome_arquivo>**
 *compilar aqruivo* | **-c \<nome_arquivo>**
 
-### Criar Variáveis no Makefile
+### Variáveis no Makefile
 Comando | Descrição |
 --------|-----------|
 **SRC = ./src** | Cria uma variavel **SRC** que possui o valor **./src**
 **$(SRC)/ft_isalpha.c** | Uso da variável **SRC**
+**OBJS = $(FILES:.c=.o)** | Copia a lista Files, substuindo .c para .o  
+
+*Exemplo:*
+```makefile
+# Cria uma variavel, contendo uma lista com nome de arquivos .c
+FILES = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr ft_unsint.c
+# Cria a variavel OBJS para copiar a lista Files, substuindo .c para .o  
+OBJS = $(FILES:.c=.o) # Create the same in FILES list with the .o extension
+```
+
 
 ### Máscaras
 Máscara | Representa|
