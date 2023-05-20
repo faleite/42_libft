@@ -15,4 +15,4 @@ Project | Skills | Grade |
 LIBFT | [Imperative programming] [Algorithms & AI] [Rigor] | [![faaraujo's 42 Libft Score](https://badge42.vercel.app/api/v2/clgrr2va0002108jo3cc5foww/project/3061823)](https://github.com/JaeSeoKim/badge42)
 
 ### *Access to the [interactive map](https://faleite.github.io/libft).*
-[<img align="center" src="./docs/map.png" width="100%"/>](https://faleite.github.io/libft)
+[<img align="center" src="./dcs/map.png" width="100%"/>](https://faleite.github.io/libft)
