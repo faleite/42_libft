@@ -6,12 +6,17 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 21:48:53 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/19 22:04:04 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/05/20 11:32:21 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief The memcpy() function copies len bytes from string src to string dst.
+ * If src and dst overlap, the results are not defined.
+ * @return The memcpy() function returns the original value of dst.
+*/
 void	*ft_memcpy(void *dst, const void *src, size_t len)
 {
 	unsigned char	*s1;

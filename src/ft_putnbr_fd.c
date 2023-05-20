@@ -6,12 +6,17 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 12:59:46 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/22 13:52:17 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/05/20 11:40:07 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Outputs the integer ’n’ to the given file descriptor.
+ * @param n The integer to output.
+ * @param fd The file descriptor on which to write.
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	nb;

@@ -6,12 +6,20 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 20:47:20 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/22 15:26:10 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/05/20 11:19:01 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief function compares the first n bytes (each interpreted as unsigned
+ * char) of the memory areas s1 and s2.
+ * @return function returns zero if the two strings are identical, otherwise
+ * returns the difference between the first two differing bytes (treated as
+ * unsigned char values, so that `\200' is greater than `\0', for example).
+ * Zero-length strings are always identical.
+*/
 int	ft_memcmp(const void *s1, const void *s2, size_t len)
 {
 	size_t			i;

@@ -6,7 +6,7 @@
 /*   By: faaraujo <faaraujo@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 12:04:09 by faaraujo          #+#    #+#             */
-/*   Updated: 2023/04/30 14:59:48 by faaraujo         ###   ########.fr       */
+/*   Updated: 2023/05/20 11:07:06 by faaraujo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,17 @@ static void	lstadd_back(t_list **lst, t_list *new)
 	tmp->next = new;
 }
 
+/**
+ * @brief Iterates the list ’lst’ and applies the function ’f’ on the content of
+ * each node 
+ * Creates a new list resulting of the successive applications of the function f
+ * The ’del’ function is used to delete the content of a node if needed.
+ * @param lst The address of a pointer to a node.
+ * @param f The address of the function used to iterate on the list.
+ * @param del The address of the function used to delete the content of a node
+ * if needed.
+ * @return The new list. NULL if the allocation fails.
+*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;
