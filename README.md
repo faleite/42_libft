@@ -1,10 +1,16 @@
-# LIBFT
+```
+██╗     ██╗██████╗ ███████╗████████╗
+██║     ██║██╔══██╗██╔════╝╚══██╔══╝
+██║     ██║██████╔╝█████╗     ██║   
+██║     ██║██╔══██╗██╔══╝     ██║   
+███████╗██║██████╔╝██║        ██║   
+╚══════╝╚═╝╚═════╝ ╚═╝        ╚═╝                                    
+```
 
 **Libft is a project for Standard C library override functions that should be\
 done from the ground up, and must behave the same as the originals**
 
-[![faaraujo's 42 stats](https://badge42.vercel.app/api/v2/clgrr2va0002108jo3cc5foww/stats?cursusId=21&coalitionId=112)](https://github.com/JaeSeoKim/badge42)
-
+<!-- [![faaraujo's 42 stats](https://badge42.vercel.app/api/v2/clgrr2va0002108jo3cc5foww/stats?cursusId=21&coalitionId=112)](https://github.com/JaeSeoKim/badge42) -->
 
 * **First part:** re-code a set of the **libc functions**, as defined in their man, with\
 the same prototype and behaviors as the originals.
@@ -14,7 +20,7 @@ or included in a different form.
 
  Skills | Grade | 
 :------:|:-----:|
-[Imperative programming] [Algorithms & AI] [Rigor] | [![faaraujo's 42 Libft Score](https://badge42.vercel.app/api/v2/clgrr2va0002108jo3cc5foww/project/3061823)](https://github.com/JaeSeoKim/badge42)
+[Imperative programming] [Algorithms & AI] [Rigor] |  **:white_check_mark: 125%**
 
 ### *Access to the [interactive map](https://faleite.github.io/libft).*
 [<img align="center" src="./dcs/map.png" width="100%"/>](https://faleite.github.io/libft)
