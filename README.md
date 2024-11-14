@@ -22,5 +22,5 @@ or included in a different form.
 :------:|:-----:|
 [Imperative programming] [Algorithms & AI] [Rigor] |  **:white_check_mark: 125%**
 
-### *Access to the [interactive map](https://faleite.github.io/libft).*
-[<img align="center" src="./dcs/map.png" width="100%"/>](https://faleite.github.io/libft)
+### *Access to the [interactive map](https://faleite.github.io/42libft).*
+[<img align="center" src="./dcs/map.png" width="100%"/>](https://faleite.github.io/42libft)
